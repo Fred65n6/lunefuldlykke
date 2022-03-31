@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-   .text-shadow{
+@layer components {
+  .text-shadow {
     text-shadow: 2px 2px #333;
-   }
+  }
+
+  .book-img {
+    height: 250px;
+    width: 100%;
+    display: ;
+  }
 }
