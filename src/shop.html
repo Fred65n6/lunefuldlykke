@@ -247,56 +247,21 @@
   </div>
   <!-- Navigation slut -->
 
-  <!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
-
+  <!--Banner-->
 <div class="bg-white ">
   <div id="mobile-menu" class="text-white alert alert-success shadow-lg  w-full text-center p-2 bg-green-800/70">
     <h3 class="font-semibold">T.O.M d. 22 April: Køb 2 plakater og få en valgfri plakat i størrelse 30X40 med GRATIS!</h3>
   </div>
   <div>
-    <!--
-      Mobile filter dialog
 
-      Off-canvas filters for mobile, show/hide based on off-canvas filters state.
-    -->
+    <!---Banner slut-->
+  
+
+
+
+    <!--Mobile Filter-->
     <div class="fixed inset-0 flex z-40 lg:hidden" role="dialog" aria-modal="true">
-      <!--
-        Off-canvas menu overlay, show/hide based on off-canvas menu state.
-
-        Entering: "transition-opacity ease-linear duration-300"
-          From: "opacity-0"
-          To: "opacity-100"
-        Leaving: "transition-opacity ease-linear duration-300"
-          From: "opacity-100"
-          To: "opacity-0"
-      -->
       <div class="fixed inset-0 bg-black bg-opacity-25" aria-hidden="true"></div>
-
-      <!--
-        Off-canvas menu, show/hide based on off-canvas menu state.
-
-        Entering: "transition ease-in-out duration-300 transform"
-          From: "translate-x-full"
-          To: "translate-x-0"
-        Leaving: "transition ease-in-out duration-300 transform"
-          From: "translate-x-0"
-          To: "translate-x-full"
-      -->
       <div class="ml-auto relative max-w-xs w-full h-full bg-white shadow-xl py-4 pb-12 flex flex-col overflow-y-auto">
         <div class="px-4 flex items-center justify-between">
           <h2 class="text-lg font-medium text-gray-900">Filters</h2>
@@ -491,7 +456,9 @@
         </form>
       </div>
     </div>
+    <!--Mobile Filter-->
 
+    <!--Desktop Filter-->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="relative z-10 flex items-baseline justify-between pt-24 pb-6 border-b border-gray-200">
         <h1 class="text-4xl font-extrabold tracking-tight text-gray-900">Plakater</h1>
@@ -507,33 +474,6 @@
                 </svg>
               </button>
             </div>
-
-            <!--
-              Dropdown menu, show/hide based on menu state.
-
-              Entering: "transition ease-out duration-100"
-                From: "transform opacity-0 scale-95"
-                To: "transform opacity-100 scale-100"
-              Leaving: "transition ease-in duration-75"
-                From: "transform opacity-100 scale-100"
-                To: "transform opacity-0 scale-95"
-            -->
-            <!-- <div class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="py-1" role="none">
-                <!--
-                  Active: "bg-gray-100", Not Active: ""
-
-                  Selected: "font-medium text-gray-900", Not Selected: "text-gray-500"
-                -->
-                <!-- <a href="#" class="font-medium text-gray-900 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0"> Mest populære </a>
-
-                <a href="#" class="text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2"> Nyeste </a>
-
-                <a href="#" class="text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3"> Pris: Lav til Høj </a>
-
-                <a href="#" class="text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4"> Pris: Høj til Lav</a>
-              </div>
-            </div> --> 
           </div>
 
           <button type="button" class="p-2 -m-2 ml-5 sm:ml-7 text-gray-400 hover:text-gray-500">
@@ -1063,6 +1003,7 @@
     </main>
   </div>
 </div>
+<!--Desktop Filter-->
 
 
 
@@ -1097,8 +1038,8 @@
     </div>
     <!-- Content slut-->
 
-      <!-- Footer -->
-    <footer class="bg-[#102600] mt-12">
+       <!-- Footer -->
+    <footer class="bg-[#0b1f02] border-t-4">
         <div class="mx-auto container py-16 xl:px-20 lg:px-12 sm:px-6 px-4">
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-4">
                 <div class="flex flex-col flex-shrink-0">
@@ -1106,7 +1047,11 @@
                         Lunefuld Lykke
                     </div>
                     <p class="text-sm leading-none  mt-4 text-white">Copyright © 2022 Lunefuld Lykke</p>
-                    <div class="flex items-center gap-x-4 mt-12">
+<div class="flex items-center gap-x-4 mt-6">
+                    <img class="w-24 mt-6" src="../src/content/e-mark.png" alt="">
+                    <img class="bg-white p-2 w-24 mt-6" src="../src/content/trustpilot-logo.svg" alt="trust">
+                    </div>
+                    <div class="flex items-center gap-x-4 mt-6">
                         <button aria-label="instagram"
                             class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
                             <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
